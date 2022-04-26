@@ -51,8 +51,10 @@ body{
     else if (hrs >= 17 && hrs <= 24)
         greet = 'Good Evening,  ';
 
-    document.getElementById('lbl').innerHTML =
     
-   greet+= "Jeannie " +`<div id="date">${date}</div>`;
+    
+   greet+= "Jeannie ";
+ greet = `<div id="date">${date}</div>` + greet;
+document.getElementById('lbl').innerHTML = greet;
 </script> 
 </html>
